@@ -28,8 +28,19 @@ def min_max_avg(names, amounts):
     ad = amounts.index(largest)
     asd = amounts.index(smallest)
     print("giau nhat", names[ad])
-    print("ngheo nhat", names[asd])
-
+    print("ngheo nhat", names[asd]
+#Check_MoneySuppoter_Cach1
+def CheckVersion1(moneySup, money, names, amounts):
+    if moneySup in names and money in amounts:
+        return True
+    else:    
+        return False
+ #Check_MoneySuppoter_cach2
+def CheckVersion2(moneySup, money, names, amounts):
+    for i in range(len(names)):
+        if moneySup == names[i] and money == amounts[i]:
+            return True
+    return False
 
 min_max_avg(names, amounts)
 
@@ -38,4 +49,14 @@ print("--------")
 names1 =["Vu", "Hang", "Mai"]
 amounts1 = [50000, 100000,200000]
 min_max_avg(names1, amounts1)
+
+#check1
+check1 = CheckVersion1('Yen', 200000, names, amounts)
+print(check1)
+#Check2
+check2 = CheckVersion1('Duong', 109000, names, amounts)
+print("check2 = ",check2)
+
+
+
 
