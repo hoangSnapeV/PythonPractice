@@ -27,7 +27,7 @@ remove_event_1(list_2)
 #------------
 # find_donator
 
-def find_donator(name,donate_list):
+def find_donator(name, donate_list):
     total = 0
     for i in range(len(donate_list)):
         name1 = donate_list[i][0] 
