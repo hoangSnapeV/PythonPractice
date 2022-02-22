@@ -1,0 +1,25 @@
+#Ma trận 3x3
+X = [[12,7,3],
+    [4 ,5,6],
+    [7 ,8,9]]
+
+#Ma trận 3x4
+Y = [[5,8,1,2],
+    [6,7,3,0],
+    [4,5,9,1]]
+
+#Ma trận 3x4
+result = [[0,0,0,0],
+         [0,0,0,0],
+         [0,0,0,0]]
+
+#Duyệt qua hàng của X
+for i in range(len(X)):
+   #Duyệt qua cột của Y
+   for j in range(len(Y[0])):
+       #Duyệt qua các hàng của Y
+       for k in range(len(Y)):
+           result[i][j] += X[i][k] * Y[k][j]
+
+for r in result:
+   print(r)

@@ -28,7 +28,7 @@ def min_max_avg(names, amounts):
     ad = amounts.index(largest)
     asd = amounts.index(smallest)
     print("giau nhat", names[ad])
-    print("ngheo nhat", names[asd]
+    print("ngheo nhat", names[asd])
 #Check_MoneySuppoter_Cach1
 def CheckVersion1(moneySup, money, names, amounts):
     if moneySup in names and money in amounts:
